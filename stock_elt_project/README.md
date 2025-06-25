@@ -1,1 +1,0 @@
-# Stock ELT Project
