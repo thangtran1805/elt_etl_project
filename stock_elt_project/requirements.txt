@@ -30,3 +30,5 @@ yarl==1.20.1
 boto3
 python-dotenv
 psycopg2
+apache-airflow==2.10.1
+--constraint https://raw.githubusercontent.com/apache/airflow/constraints-2.10.1/constraints-3.10.txt
