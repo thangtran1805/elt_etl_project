@@ -29,13 +29,6 @@ derby.log
 # ─── DuckDB ──────────────────────────
 *.duckdb
 
-# ─── Data (tạm thời hoặc lớn) ────────
-data/
-*.csv
-*.json
-*.parquet
-artifacts/
-
 # ─── VSCode / IDE ────────────────────
 .vscode/
 .idea/
