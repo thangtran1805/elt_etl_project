@@ -55,7 +55,7 @@ def save_to_json(dataframe,filename):
 
 def transform_to_db_2():
     # Read the latest markets data
-    markets = read_latest_file_in_directory('/home/thangtranquoc/stock_elt_project/backend/data/raw/markets')
+    markets = read_latest_file_in_directory('/home/thangtranquoc/projects/stock_elt_project/backend/data/raw/markets')
 
     # Get the current date for filenames
     date = datetime.date.today().strftime('%Y_%m_%d')
@@ -109,7 +109,7 @@ def transform_to_db_2():
     exchanges.rename(columns=new_columns,inplace=True)
 
     # Save transformed exchanges data to JSON
-    path = f'/home/thangtranquoc/stock_elt_project/backend/data/processed/transformed_to_db_exchanges/process_exchanges_{date}.json'
+    path = f'/home/thangtranquoc/projects/stock_elt_project/backend/data/processed/transformed_to_db_exchanges/process_exchanges_{date}.json'
     save_to_json(exchanges,path)
 
 # transform_to_db_2()

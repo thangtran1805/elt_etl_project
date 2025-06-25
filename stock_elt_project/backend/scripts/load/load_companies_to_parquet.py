@@ -57,9 +57,9 @@ def load_db_to_dl(input_directory,output_directory):
 def load_companies_to_parquet():
     # Convert the companies JSON file to parquet
     # Path to the directory containing the JSON file
-    input_directory = r'/home/thangtranquoc/stock_elt_project/backend/data/processed/transformed_to_db_companies'
+    input_directory = r'/home/thangtranquoc/projects/stock_elt_project/backend/data/processed/transformed_to_db_companies'
     # Path to the directory to save the Parquet file
-    output_directory = r'/home/thangtranquoc/stock_elt_project/backend/data/processed/load_companies_to_dw'
+    output_directory = r'/home/thangtranquoc/projects/stock_elt_project/backend/data/processed/load_companies_to_dw'
     load_db_to_dl(input_directory,output_directory)
 
 # load_companies_to_parquet()

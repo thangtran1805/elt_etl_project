@@ -77,7 +77,7 @@ def process(parquet_file_path):
     arrow_table = pa.Table.from_pandas(df_arrow)
 
     # Ghi vào DuckDB
-    conn = duckdb.connect('/home/thangtranquoc/stock_elt_project/datawarehouse.duckdb')
+    conn = duckdb.connect('/home/thangtranquoc/projects/stock_elt_project/datawarehouse.duckdb')
     conn.register('arrow_table', arrow_table)
     conn.execute('''
         INSERT INTO dim_companies (

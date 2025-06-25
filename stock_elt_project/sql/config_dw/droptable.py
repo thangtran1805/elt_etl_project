@@ -1,7 +1,7 @@
 import duckdb
 
 # Connect to DuckDB
-conn = duckdb.connect('/home/thangtranquoc/stock_elt_project/datawarehouse.duckdb')
+conn = duckdb.connect('/home/thangtranquoc/projects/stock_elt_project/datawarehouse.duckdb')
 
 # Delete fact_candles table if exists
 # conn.execute('DROP TABLE IF EXISTS fact_candles CASCADE;')

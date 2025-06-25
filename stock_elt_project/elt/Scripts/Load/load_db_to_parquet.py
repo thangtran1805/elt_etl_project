@@ -32,11 +32,11 @@ def load_db_to_parquet():
     engine = create_engine(f'postgresql+psycopg2://{user}:{password}@{host}:{port}/{database}')
 
     # SQL query file path
-    query_file_path = '/home/thangtranquoc/stock_elt_project/elt/Scripts/Extract/extract_db_to_parquet.sql'
+    query_file_path = '/home/thangtranquoc/projects/stock_elt_project/elt/Scripts/Extract/extract_db_to_parquet.sql'
 
     # Output Parquet file path
     date = datetime.date.today().strftime('%Y_%m_%d')
-    parquet_file_path = f'/home/thangtranquoc/stock_elt_project/elt/Data/completed/load_db_to_dl/load_db_to_dl_{date}.parquet'
+    parquet_file_path = f'/home/thangtranquoc/projects/stock_elt_project/elt/Data/completed/load_db_to_dl/load_db_to_dl_{date}.parquet'
 
     # Read SQL query and write result to Parquet
     query = read_query_from_a_file(query_file_path)

@@ -70,7 +70,7 @@ def transform_to_db_3():
     engine = create_engine(f"{DATABASE_TYPE}://{USER}:{PASSWORD}@{ENDPOINT}:{PORT}/{DATABASE}")
 
     # Read the latest companies JSON file
-    companies_json = read_latest_file_in_directory('/home/thangtranquoc/stock_elt_project/backend/data/raw/companies')
+    companies_json = read_latest_file_in_directory('/home/thangtranquoc/projects/stock_elt_project/backend/data/raw/companies')
     date = datetime.date.today().strftime("%Y_%m_%d")
 
     # Create a DataFrame for companies
@@ -152,7 +152,7 @@ def transform_to_db_3():
     companies.rename(columns=new_columns, inplace=True)
 
     # Save the final companies DataFrame to a JSON file
-    path = f"/home/thangtranquoc/stock_elt_project/backend/data/processed/transformed_to_db_companies/process_companies_{date}.json"
+    path = f"/home/thangtranquoc/projects/stock_elt_project/backend/data/processed/transformed_to_db_companies/process_companies_{date}.json"
     save_to_json(companies, path)
     
 # transform_to_db_3()

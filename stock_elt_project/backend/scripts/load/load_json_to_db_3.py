@@ -57,7 +57,7 @@ def insert_data_from_json(file_path, table_name, columns, conflict_columns):
     print(f'✅ Inserted {len(filtered_data)} records into {table_name}')
 
 def load_json_to_db_3():
-    directory = '/home/thangtranquoc/stock_elt_project/backend/data/processed/transformed_to_db_companies'
+    directory = '/home/thangtranquoc/projects/stock_elt_project/backend/data/processed/transformed_to_db_companies'
     extension = '.json'
     table_name = 'companies'
 

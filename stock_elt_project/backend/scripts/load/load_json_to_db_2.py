@@ -59,7 +59,7 @@ def insert_data_from_json(file_path,table_name,columns,conflict_columns):
 
 def load_json_to_db_2():
     # Define directory and table infomation
-    directory = '/home/thangtranquoc/stock_elt_project/backend/data/processed/transformed_to_db_exchanges'
+    directory = '/home/thangtranquoc/projects/stock_elt_project/backend/data/processed/transformed_to_db_exchanges'
     table_name = 'exchanges'
     columns = ['exchange_region_id','exchange_name']
     conflict_columns = ['exchange_name']

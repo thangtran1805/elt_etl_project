@@ -29,9 +29,9 @@ def load_parquet_to_s3():
 
     # S3 prefix and process news,ohlcs folder attributes
     folders = {
-        'Process_news' : '/home/thangtranquoc/stock_elt_project/elt/Data/completed/load_api_news_to_dl',
-        'Process_ohlcs' : '/home/thangtranquoc/stock_elt_project/elt/Data/completed/load_api_ohlcs_to_dl',
-        'Process_companies' : '/home/thangtranquoc/stock_elt_project/elt/Data/completed/load_db_to_dl'
+        'Process_news' : '/home/thangtranquoc/projects/stock_elt_project/elt/Data/completed/load_api_news_to_dl',
+        'Process_ohlcs' : '/home/thangtranquoc/projects/stock_elt_project/elt/Data/completed/load_api_ohlcs_to_dl',
+        'Process_companies' : '/home/thangtranquoc/projects/stock_elt_project/elt/Data/completed/load_db_to_dl'
     }
 
     # S3 connection string

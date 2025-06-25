@@ -22,7 +22,7 @@ def crawl_markets():
     date = (datetime.date.today() - datetime.timedelta(days=1)).strftime('%Y_%m_%d')
 
     # Define path to save data
-    path = r'/home/thangtranquoc/stock_elt_project/backend/data/raw/markets/crawl_markets_' + f'{date}.json'
+    path = r'/home/thangtranquoc/projects/stock_elt_project/backend/data/raw/markets/crawl_markets_' + f'{date}.json'
 
     # Write the json_object to a file
     with open(path,'w') as outfile:

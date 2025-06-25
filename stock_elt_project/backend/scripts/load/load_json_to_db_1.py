@@ -63,7 +63,7 @@ def load_json_to_db_1():
     # Insert data into 'regions' table
     insert_data_from_json(
         get_latest_file_in_directory(
-            '/home/thangtranquoc/stock_elt_project/backend/data/processed/transformed_to_db_regions', 
+            '/home/thangtranquoc/projects/stock_elt_project/backend/data/processed/transformed_to_db_regions', 
             '.json'
         ),
         'regions',
@@ -74,7 +74,7 @@ def load_json_to_db_1():
     # Insert data into 'industries' table
     insert_data_from_json(
         get_latest_file_in_directory(
-            '/home/thangtranquoc/stock_elt_project/backend/data/processed/transformed_to_db_industries', 
+            '/home/thangtranquoc/projects/stock_elt_project/backend/data/processed/transformed_to_db_industries', 
             '.json'
         ),
         'industries',
@@ -85,7 +85,7 @@ def load_json_to_db_1():
     # Insert data into 'sicindustries' table
     insert_data_from_json(
         get_latest_file_in_directory(
-            '/home/thangtranquoc/stock_elt_project/backend/data/processed/transformed_to_db_sicindustries', 
+            '/home/thangtranquoc/projects/stock_elt_project/backend/data/processed/transformed_to_db_sicindustries', 
             '.json'
         ),
         'sicindustries',

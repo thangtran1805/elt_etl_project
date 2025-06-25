@@ -32,7 +32,7 @@ def crawl_ohlc():
     date = (datetime.date.today() - datetime.timedelta(days=1)).strftime('%Y_%m_%d')
 
     # Define the path to save data
-    path = r'/home/thangtranquoc/stock_elt_project/elt/Data/raw/ohlc/crawl_ohlc_' + f'{date}.json'
+    path = r'/home/thangtranquoc/projects/stock_elt_project/elt/Data/raw/ohlc/crawl_ohlc_' + f'{date}.json'
 
     # Write the json data to a file
     with open(path,'w') as outfile:

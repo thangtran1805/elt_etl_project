@@ -79,7 +79,7 @@ def process(parquet_file_path):
     yesterday = datetime.today().date() - timedelta(days=1)
     print(f"Yesterday's date: {yesterday}")
 
-    conn = duckdb.connect('/home/thangtranquoc/stock_elt_project/datawarehouse.duckdb')
+    conn = duckdb.connect('/home/thangtranquoc/projects/stock_elt_project/datawarehouse.duckdb')
 
     conn.execute(f'''
         INSERT INTO dim_time (date, day_of_week, month,quater, year)

@@ -23,7 +23,7 @@ def crawl_companies():
 
     # Get the current date for file name 
     date = (datetime.date.today()).strftime('%Y_%m_%d')
-    path = r'/home/thangtranquoc/stock_elt_project/backend/data/raw/companies/crawl_companies_' + f'{date}.json'
+    path = r'/home/thangtranquoc/projects/stock_elt_project/backend/data/raw/companies/crawl_companies_' + f'{date}.json'
 
     # Write the json data to a file
     with open(path,'w') as outfile:

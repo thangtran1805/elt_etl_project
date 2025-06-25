@@ -55,7 +55,7 @@ def process(parquet_file_path):
     print(f"📥 Đang đọc file: {parquet_file_path}")
 
     # Connect to DuckDB
-    database_path = '/home/thangtranquoc/stock_elt_project/datawarehouse.duckdb'
+    database_path = '/home/thangtranquoc/projects/stock_elt_project/datawarehouse.duckdb'
     conn = duckdb.connect(database=database_path)
     
     # Read Parquet file into Spark DataFrame

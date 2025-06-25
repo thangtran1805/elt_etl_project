@@ -32,8 +32,8 @@ def save_to_json(dataframe,filename):
     print(f'Saved dataframe to {filename}')
 
 def transform_to_db_1():
-    companies = read_latest_file_in_directory('/home/thangtranquoc/stock_elt_project/backend/data/raw/companies')
-    markets = read_latest_file_in_directory('/home/thangtranquoc/stock_elt_project/backend/data/raw/markets')
+    companies = read_latest_file_in_directory('/home/thangtranquoc/projects/stock_elt_project/backend/data/raw/companies')
+    markets = read_latest_file_in_directory('/home/thangtranquoc/projects/stock_elt_project/backend/data/raw/markets')
 
     date = datetime.date.today().strftime('%Y_%m_%d')
 
@@ -45,7 +45,7 @@ def transform_to_db_1():
         }
         for item in markets
     ]))
-    regions_path = f'/home/thangtranquoc/stock_elt_project/backend/data/processed/transformed_to_db_regions/process_regions_{date}.json'
+    regions_path = f'/home/thangtranquoc/projects/stock_elt_project/backend/data/processed/transformed_to_db_regions/process_regions_{date}.json'
     save_to_json(regions,regions_path)
 
     industries = cleaned_dataframe(pd.DataFrame([
@@ -55,7 +55,7 @@ def transform_to_db_1():
         }
         for item in companies
     ]))
-    industries_path = f'/home/thangtranquoc/stock_elt_project/backend/data/processed/transformed_to_db_industries/process_industries_{date}.json'
+    industries_path = f'/home/thangtranquoc/projects/stock_elt_project/backend/data/processed/transformed_to_db_industries/process_industries_{date}.json'
     save_to_json(industries,industries_path)
 
     sicindustries = cleaned_dataframe(pd.DataFrame([
@@ -66,7 +66,7 @@ def transform_to_db_1():
         }
         for item in companies
     ]))
-    sicindustries_path = f'/home/thangtranquoc/stock_elt_project/backend/data/processed/transformed_to_db_sicindustries/process_sicindustries_{date}.json'
+    sicindustries_path = f'/home/thangtranquoc/projects/stock_elt_project/backend/data/processed/transformed_to_db_sicindustries/process_sicindustries_{date}.json'
     save_to_json(sicindustries,sicindustries_path)
 
 # transform_to_db_1()

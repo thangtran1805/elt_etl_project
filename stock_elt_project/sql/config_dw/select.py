@@ -1,7 +1,7 @@
 import duckdb
 
 # Kết nối với database
-con = duckdb.connect(database='/home/thangtranquoc/stock_elt_project/datawarehouse.duckdb')
+con = duckdb.connect(database='/home/thangtranquoc/projects/stock_elt_project/datawarehouse.duckdb')
 
 con.sql("Select * from dim_companies;").show()
 con.sql("Select count(*) from dim_companies;").show()
